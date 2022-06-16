@@ -27,7 +27,7 @@ const HomeTemplate = () => {
           src="/nature.jpg"
         />
 
-        <Box>
+        <Box mx="auto" mt="10rem">
           <Form />
         </Box>
       </Flex>
