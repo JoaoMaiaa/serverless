@@ -26,13 +26,13 @@ const FormServerless = () => {
   return (
     <>
       {!error ? null : (
-        <Alert borderRadius="md" status="error" variant="solid">
+        <Alert mb="0.5rem" borderRadius="md" status="error" variant="solid">
           <AlertIcon />
           Você precisa colocar o seu email
         </Alert>
       )}
       {!send ? null : (
-        <Alert borderRadius="md" status="success" variant="solid">
+        <Alert mb="0.5rem" borderRadius="md" status="success" variant="solid">
           <AlertIcon />
           Seu email foi enviado com sucesso
         </Alert>
