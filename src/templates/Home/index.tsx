@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import Form from '../../components/Form'
+import FormServerless from '../../components/Form'
 import { Flex, Box, Image } from '@chakra-ui/react'
 
 const HomeTemplate = () => {
@@ -11,6 +11,7 @@ const HomeTemplate = () => {
       </Head>
       <Flex wrap="wrap">
         <Box
+          display={{ base: 'none', lg: 'flex', md: 'none' }}
           minW={{ lg: 'xl', md: 'md' }}
           h="100vh"
           bgGradient="linear(to-r, transparent, #000)"
@@ -27,8 +28,8 @@ const HomeTemplate = () => {
           src="/nature.jpg"
         />
 
-        <Box mx="auto" mt="10rem">
-          <Form />
+        <Box mx="auto" mt="10rem" p="6">
+          <FormServerless />
         </Box>
       </Flex>
     </>
