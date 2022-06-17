@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import FormServerless from '../../components/Form'
+import Header from '../../components/Header'
 import { Flex, Box, Image } from '@chakra-ui/react'
 
 const HomeTemplate = () => {
@@ -9,6 +10,7 @@ const HomeTemplate = () => {
       <Head>
         <title>Inscreva-se</title>
       </Head>
+      <Header />
       <Flex wrap="wrap">
         <Box
           display={{ base: 'none', lg: 'flex', md: 'none' }}
