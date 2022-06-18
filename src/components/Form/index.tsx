@@ -9,7 +9,10 @@ import {
 } from '@chakra-ui/react'
 import axios from 'axios'
 
+import { useRouter } from 'next/router'
+
 const FormServerless = () => {
+  const router = useRouter()
   const [error, setError] = useState(false)
   const [email, setEmail] = useState('')
   const [send, setSend] = useState(false)
@@ -21,10 +24,10 @@ const FormServerless = () => {
       setEmail('')
     } else {
       setError(false)
-      const api = axios.create({ baseURL: 'http://localhost:3000/' })
-      api.post('/api/serverless', { email })
+      axios.post('/api/serverless', { email })
       setEmail('')
       setSend(true)
+      router.push('/thanks')
     }
   }
 

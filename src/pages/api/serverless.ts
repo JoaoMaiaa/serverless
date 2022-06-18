@@ -1,10 +1,16 @@
 import { VercelRequest, VercelResponse } from '@vercel/node'
-import { MongoClient } from 'mongodb'
+import { MongoClient, Db } from 'mongodb'
+
+let cachedDb: Db
 
 async function connect(uri: string) {
+  if (cachedDb) {
+    return cachedDb
+  }
   const client = await MongoClient.connect(uri)
   const dbName = 'news'
   const db = client.db(dbName)
+  cachedDb = db
   return db
 }
 
