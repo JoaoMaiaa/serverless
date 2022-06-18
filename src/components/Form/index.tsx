@@ -7,6 +7,7 @@ import {
   Alert,
   AlertIcon
 } from '@chakra-ui/react'
+import axios from 'axios'
 
 const FormServerless = () => {
   const [error, setError] = useState(false)
@@ -17,8 +18,12 @@ const FormServerless = () => {
     e.preventDefault()
     if (email == '') {
       setError(true)
+      setEmail('')
     } else {
       setError(false)
+      const api = axios.create({ baseURL: 'http://localhost:3000/' })
+      api.post('/api/serverless', { email })
+      setEmail('')
       setSend(true)
     }
   }
