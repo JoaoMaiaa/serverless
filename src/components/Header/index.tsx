@@ -12,7 +12,7 @@ const Header = () => {
         position="absolute"
         right="10"
         top="10"
-        color="gray.600"
+        color="teal.600"
         textAlign="end"
       >
         Serverless{' '}

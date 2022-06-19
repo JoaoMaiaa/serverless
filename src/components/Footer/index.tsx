@@ -10,7 +10,7 @@ const Footer = () => {
             <ListItem>
               <Link href="#">
                 <Button
-                  bg="gray.900"
+                  bg="teal.900"
                   _hover={{ bg: 'gray.800' }}
                   size="sm"
                   borderRadius="sm"
@@ -33,7 +33,7 @@ const Footer = () => {
               <Link href="https://instagram.com/eumaiajoao" isExternal>
                 <Button
                   color="white"
-                  bg="gray.900"
+                  bg="teal.900"
                   _hover={{ bg: 'gray.800' }}
                   size="sm"
                   borderRadius="sm"
@@ -55,7 +55,7 @@ const Footer = () => {
               <Link href="https://github.com/JoaoMaiaa" isExternal>
                 <Button
                   color="white"
-                  bg="gray.900"
+                  bg="teal.900"
                   _hover={{ bg: 'gray.800' }}
                   size="sm"
                   borderRadius="sm"
@@ -77,7 +77,7 @@ const Footer = () => {
               <Link href="#">
                 <Button
                   color="white"
-                  bg="gray.900"
+                  bg="teal.900"
                   _hover={{ bg: 'gray.800' }}
                   size="sm"
                   borderRadius="sm"
@@ -97,7 +97,7 @@ const Footer = () => {
             </ListItem>
           </Flex>
         </List>
-        <Box display="flex" justifyContent="center" mt="1rem">
+        <Box color="teal.900" display="flex" justifyContent="center" mt="1rem">
           Feito por{' '}
           <Box cursor="pointer" textDecoration="underline">
             João Maia

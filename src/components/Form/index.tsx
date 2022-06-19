@@ -45,7 +45,12 @@ const FormServerless = () => {
           Seu email foi enviado com sucesso
         </Alert>
       )}
-      <Stack gap="1rem" bg="gray.800" borderRadius="md" padding="6">
+      <Stack
+        gap="1rem"
+        bg="rgba(255, 255, 255, 0.08)"
+        borderRadius="md"
+        padding="6"
+      >
         <Heading mb="1rem" as="h1" size="md" color="white">
           Insira um email
         </Heading>
@@ -55,12 +60,12 @@ const FormServerless = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             size="lg"
-            bg="gray.900"
+            bg="teal.900"
             placeholder="Seu email"
             borderColor="transparent"
             _hover={{ borderColor: 'transparent' }}
             focusBorderColor="green.500"
-            color="gray.500"
+            color="teal.500"
             borderRadius="sm"
             type="email"
           />
