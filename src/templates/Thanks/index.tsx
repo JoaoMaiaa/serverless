@@ -22,10 +22,10 @@ const ThanksTemplate = () => {
         <Box
           position="absolute"
           w="100%"
-          h="100vh"
+          h="80vh"
           bgGradient="linear(to-b, transparent, #000)"
         ></Box>
-        <Image h="100vh" w="100%" objectFit="cover" src="/nature.jpg" />
+        <Image h="80vh" w="100%" objectFit="cover" src="/nature.jpg" />
       </Box>
       <Container maxW="container.lg" mt="5rem">
         <Box>
